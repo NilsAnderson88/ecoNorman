@@ -74,7 +74,7 @@ function html() {
 function css() {
     return src(path.src.css, { base: "src/assets/sass/" })
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(sass()).on('error', sass.logError)
         .pipe(autoprefixer({
             Browserslist: ['last 8 versions'],
             cascade: true
