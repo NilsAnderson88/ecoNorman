@@ -9,6 +9,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
+    overflow: hidden;
+    height: 100%;
 }
 
 *,
@@ -1395,9 +1397,9 @@ body {
     flex-direction: column;
 }
 
-.header {
+.header__inner {
     background-color: #cbdc8b;
-    width: 100%;
+    padding: 1rem 0;
 }
 
 .header__row {
@@ -1409,7 +1411,7 @@ body {
     font-family: 'Bebas Neue', cursive;
     text-decoration: none;
     color: #fff;
-    padding-left: 15rem;
+    padding-left: 17rem;
 }
 
 .logo__prefix {
@@ -1419,13 +1421,23 @@ body {
 
 .social__icon {
     fill: #fff;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 20px;
+    height: 20px;
     margin-right: 1rem;
+    transition: fill 0.1s linear;
+}
+
+.social__icon--vk {
+    width: 30px;
+    height: 30px;
 }
 
 .social {
     display: inline-block;
+}
+
+.social__link:hover .social__icon {
+    fill: #739800;
 }
 
 .contacts {
@@ -1444,7 +1456,7 @@ body {
     vertical-align: middle;
     margin-right: 2rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .contacts_icon {
@@ -1460,9 +1472,62 @@ body {
     height: 1.2rem;
 }
 
+.nav__row {
+    background-color: #4e4e4e;
+    padding: 0.8rem 20%;
+    text-align: center;
+}
+
+.nav__link {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.nav__link:hover {
+    color: #cbdc8b;
+    transition: color 0.1s linear;
+}
+
 .content {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+.intro__title {
+    vertical-align: middle;
+    color: #cbdc8b;
+    font-size: 11rem;
+    font-family: 'Bebas Neue', cursive;
+    float: right;
+}
+
+.intro__logo {
+    padding-bottom: 0;
+    text-align: center;
+    fill: #739800;
+}
+
+.intro__logo .wood__logo {
+    width: 150px;
+    height: 250px;
+}
+
+.intro__subtitle {
+    vertical-align: middle;
+    color: #cbdc8b;
+    font-size: 11rem;
+    font-family: 'Bebas Neue', cursive;
+    float: left;
+}
+
+.footer {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4e4e4e;
+    padding: 2rem 0;
+    font-size: 2rem;
 }
