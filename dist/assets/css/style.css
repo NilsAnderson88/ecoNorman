@@ -1287,7 +1287,7 @@ body {
     z-index: 1040;
     width: 100vw;
     height: 100vh;
-    background-color: #cbdc8b;
+    background-color: #4e4e4e;
 }
 
 .modal-backdrop.fade {
@@ -1406,8 +1406,11 @@ body {
 }
 
 .logo__img {
-    width: 90px;
-    height: 85px;
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    padding: 7px 0;
 }
 
 .logo {
@@ -1501,39 +1504,35 @@ body {
 }
 
 .intro {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
     height: 100%;
+    margin-left: 20%;
 }
 
 .intro__title {
-    align-items: center;
+    margin: auto;
+    font-size: 12rem;
     color: #cbdc8b;
-    font-size: 9rem;
     font-family: 'Bebas Neue', cursive;
-    float: right;
-    height: 100%;
+    margin-right: 120px;
 }
 
 .intro__logo {
-    padding-bottom: 0;
-    text-align: center;
-    fill: #739800;
-}
-
-.intro__logo .wood__logo {
-    width: 150px;
-    height: 250px;
+    display: flex;
+    align-self: flex-end;
+    width: 300px;
+    height: 350px;
+    transform: scale(-1, 1);
 }
 
 .intro__subtitle {
-    align-items: center;
+    margin: auto;
     color: #cbdc8b;
-    font-size: 9rem;
+    font-size: 12rem;
     font-family: 'Bebas Neue', cursive;
-    float: left;
-}
-
-.intro__row {
-    height: 100%;
+    margin-left: 40px;
 }
 
 .footer {
@@ -1548,7 +1547,7 @@ body {
     font-size: 2rem;
 }
 
-.footer__btn {
+.btn {
     display: inline-block;
     align-items: center;
     padding: 1rem 2rem;
@@ -1563,11 +1562,14 @@ body {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-    border: 2px solid #fff;
     transition: background .1s linear, color .1s linear;
 }
 
-.footer__btn:hover {
+.btn--green {
+    border: 2px solid #fff;
+}
+
+.btn--green:hover {
     color: #4e4e4e;
     background-color: #cbdc8b;
 }
@@ -1607,7 +1609,7 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    fill: #4e4e4e;
+    fill: #fff;
 }
 
 .modal__title {
@@ -1627,4 +1629,35 @@ body {
 
 .form__group {
     margin-bottom: 1rem;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 1rem 1.8rem;
+    font-family: inherit;
+    color: #4e4e4e;
+    font-size: 1rem;
+    line-height: 1.1;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.input::-moz-placeholder {
+    color: #7b7b7b;
+}
+
+.input:-ms-input-placeholder {
+    color: #7b7b7b;
+}
+
+.input::placeholder {
+    color: #7b7b7b;
+}
+
+.input:focus {
+    outline: 0;
+    border-color: #739800;
 }
