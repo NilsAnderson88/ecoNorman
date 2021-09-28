@@ -1,0 +1,31 @@
+.btn {
+	display: inline-block;
+    align-items: center;
+    padding: 1rem 2rem;
+	margin-top: 1rem;
+	
+
+    background-color: $black;
+    border: 0;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.1;
+    font-weight: 500;
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+	transition: background .1s linear, color .1s linear;
+	
+	&--green {
+		border: 2px solid $white;
+		
+	
+	
+	&:hover {
+            color: $black;
+            background-color: $green;
+        }
+}
+}

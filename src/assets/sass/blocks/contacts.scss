@@ -1,0 +1,48 @@
+.contacts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	display: flex;
+
+}
+
+.contacts__link {
+
+    text-decoration: none;
+    color: $white;
+	
+	&:hover {
+		color: $green_dark;
+	}
+	
+	transition: color 0.2s linear;
+
+	
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.contacts_icon {
+    margin-right: 0.5rem;
+    fill: $white;
+    width: 1.2rem;
+    height: 1.2rem;
+
+
+}
+
+.contacts_icon--mail {
+    fill: $white;
+    width: 1.5rem;
+    height: 1.2rem;
+
+}
+
+
+
